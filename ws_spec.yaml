@@ -1,0 +1,27 @@
+base: http://localhost:8080
+views:
+    - name: Första testvyn
+      url: /test1
+      method: post
+      fields: 
+          - name: test1
+            expected: int
+            doc: |
+                 Bla int bla
+                 bla2 hum
+
+          - name: test2
+            expected: str
+            doc: |
+                 Bla str bla
+                 bla3 hum
+      success:
+          response: 200
+      fail:
+          response: 400
+      doc: |
+           view bla view blalbla
+           asdf
+           45g
+           gnk
+
